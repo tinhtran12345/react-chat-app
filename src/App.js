@@ -1,7 +1,8 @@
 // import './App.css';
 import "./dist/styles.css"
+import { Home } from "./Pages/Home";
 // import { Home } from "./Pages/Home";
-import { Login } from "./Pages/Login";
+// import { Login } from "./Pages/Login";
 // import { Register } from "./Pages/Register";
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <div className="App">
       {/* <Home/> */}
       {/* <Register/> */}
-      <Login/>
+      {/* <Login/> */}
+      <Home/>
     </div>
   );
 }

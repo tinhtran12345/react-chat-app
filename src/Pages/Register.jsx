@@ -2,6 +2,7 @@ import React from 'react'
 import add_avatar from "../images/add_avatar.webp"
 
 export const Register = () => {
+    // const 
     return (
         <div className='formContainer'>
             <div className="formWrapper">

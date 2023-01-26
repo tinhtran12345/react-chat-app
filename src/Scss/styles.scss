@@ -85,3 +85,242 @@
         }
     }
 } 
+
+.home{
+    height: 100vh;
+    background: linear-gradient(180deg, #87CEFA, #6495ED);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        border: 1px solid #FFF8DC;
+        border-radius: 10px;
+        width: 65%;
+        height: 500px;
+        display: grid;
+        position: relative;
+        grid-template-columns: 30% 70%;
+        overflow: hidden;
+        
+
+        .sidebar{
+            background: #3e3c61;
+            border-right: 1px solid #3e3c61 ;
+            overflow: hidden;
+            .navbar{
+                padding: 5px 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: #2f2d52;
+                height: 50px;
+                font-size: 14px;
+                .logo{
+                    color: #e9e9f0;
+                    font-weight: 800;
+                }
+                .user{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    color: #e9e9f0;
+
+                    span{
+                        font-weight: 600;
+                    }
+
+                    img{
+                        height: 24px;
+                        width: 24px;
+                        border-radius: 50%;
+                        background-position: center;
+                        object-fit: cover;
+                    }
+
+            
+                    button{
+                        padding: 5px;
+                        font-weight: 700;
+                        border-radius: 10px;
+                        color: #091fdc;
+                        border: none;
+                        &:hover{
+                            transition: 0.2s ease-in-out;
+                            scale: 1.1;
+                        }
+                    }
+
+                }
+            }
+
+            .search{
+                .searchForm{
+                    width: 100%;
+                    input{
+                        padding: 10px;
+                        width: 100%;
+                        font-size: 16px;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+            
+            
+            
+        }
+    }
+}
+        .userChat{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            &:hover{
+                background: #2f2d52;
+                transition: 0.2s ease-in-out ;
+            }
+            img{
+                height: 24px;
+                width: 24px;
+                object-fit: cover;
+                border-radius: 50%;
+                background: white;
+            }
+            .userChatInfo{
+                span{
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
+            }
+        }
+
+
+
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    // flex: 2;
+    // overflow: scroll;
+    height: 500px;
+    .chatInfo{
+        padding:0 10px ;
+        // position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        align-items: center;
+        background: #3e3c61;
+        color: white;
+        span{
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .chatIcons{
+            display: flex;
+            gap: 10px;
+            img{
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+        }
+    }
+    .messages{
+        display: block;
+        height: calc(100% - 110px);
+        background: #d1d1f2;
+        padding: 10px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        .message{
+            // height: 100%;
+            display: flex;
+            gap: 20px;
+            .messageInfo{
+                display: flex;
+                flex-direction: column;
+                color: gray;
+                font-weight: 300;
+                margin-bottom: 20px;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+            .messageContent{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                max-width: 80%;
+                p{
+                    background: white;
+                    padding: 10px 20px;
+                    border-radius: 0 10px 10px 10px ;
+                }
+                img{
+                    width: 50%;
+                    padding: 10px;
+                }
+            }
+
+            &.owner{
+                flex-direction: row-reverse;
+                .messageContent{
+                    align-items: flex-end;
+
+                    p{
+                        background: #8da4f1;
+                        color: white;
+                        border-radius: 10px 0 10px 10px;
+                        max-width: max-content;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    .input{
+        height: 60px;
+        background: white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        input{
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 10px 15px;
+            color: #2f2252;
+            &::placeholder{
+                color: gray;
+            }
+        }
+        .send{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            button{
+                padding: 10px;
+                border-radius: 5px;
+                background: #091fdc;
+                color: white;
+                font-weight: 800;
+                border: none;
+                &:hover{
+                    transition: 0.3s ease-in-out;
+                    scale: 1.03;
+                }
+            }
+        }
+    }
+}
+
