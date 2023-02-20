@@ -1,65 +1,64 @@
-.App{
+.App {
     position: relative;
     // text-align: center;
 }
-.formContainer{
+.formContainer {
     height: 100vh;
-    background: linear-gradient(180deg, #87CEFA,#6495ED);
+    background: linear-gradient(180deg, #87cefa, #6495ed);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.formWrapper{
+.formWrapper {
     width: 450px;
-    background: #FFF8DC;
+    background: #fff8dc;
     padding: 40px 60px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .logo{
-        color: #00008B;
+    .logo {
+        color: #00008b;
         font-weight: 800;
         font-size: 30px;
-
     }
-    .title{
+    .title {
         margin-bottom: 20px;
         font-size: 20px;
         font-weight: 500;
         color: black;
     }
 
-    form{
+    form {
         display: flex;
         flex-direction: column;
         gap: 10px;
         width: 100%;
+        // align-items: center;
 
-        input{
+        input {
             border: none;
-            border-bottom: 0.1px solid #6495ED;
+            border-bottom: 0.1px solid #6495ed;
             background: rgb(224, 221, 217);
             border-radius: 20px;
             width: 100%;
             padding: 15px 20px;
             margin-bottom: 5px;
-            &::placeholder{
+            &::placeholder {
                 font-size: 16px;
-
             }
         }
-        
-        label{
+
+        label {
             display: flex;
             align-items: center;
             gap: 10px;
             color: rgb(36, 33, 33);
             font-size: 12px;
             font-weight: 500;
-            img{
+            img {
                 height: 40px;
                 width: 50px;
                 border-radius: 50%;
@@ -67,33 +66,36 @@
             }
         }
 
-        button{
+        button {
+            width: 100%;
             margin-bottom: 15px;
             padding: 15px 20px;
             border-radius: 25px;
             background: #091fdc;
             border: none;
             cursor: pointer;
-            color: #FFF8DC;
+            color: #fff8dc;
             font-size: 16px;
             font-weight: 800;
-            &:hover{
+            &:hover {
                 transition: 0.3s ease-in;
                 scale: 1.05;
             }
-
+        }
+        p {
+            text-align: center;
         }
     }
-} 
+}
 
-.home{
+.home {
     height: 100vh;
-    background: linear-gradient(180deg, #87CEFA, #6495ED);
+    background: linear-gradient(180deg, #87cefa, #6495ed);
     display: flex;
     align-items: center;
     justify-content: center;
-    .container{
-        border: 1px solid #FFF8DC;
+    .container {
+        border: 1px solid #fff8dc;
         border-radius: 10px;
         width: 65%;
         height: 500px;
@@ -101,13 +103,12 @@
         position: relative;
         grid-template-columns: 30% 70%;
         overflow: hidden;
-        
 
-        .sidebar{
+        .sidebar {
             background: #3e3c61;
-            border-right: 1px solid #3e3c61 ;
+            border-right: 1px solid #3e3c61;
             overflow: hidden;
-            .navbar{
+            .navbar {
                 padding: 5px 15px;
                 display: flex;
                 align-items: center;
@@ -115,21 +116,21 @@
                 background: #2f2d52;
                 height: 50px;
                 font-size: 14px;
-                .logo{
+                .logo {
                     color: #e9e9f0;
                     font-weight: 800;
                 }
-                .user{
+                .user {
                     display: flex;
                     align-items: center;
                     gap: 15px;
                     color: #e9e9f0;
 
-                    span{
+                    span {
                         font-weight: 600;
                     }
 
-                    img{
+                    img {
                         height: 24px;
                         width: 24px;
                         border-radius: 50%;
@@ -137,26 +138,24 @@
                         object-fit: cover;
                     }
 
-            
-                    button{
+                    button {
                         padding: 5px;
                         font-weight: 700;
                         border-radius: 10px;
                         color: #091fdc;
                         border: none;
-                        &:hover{
+                        &:hover {
                             transition: 0.2s ease-in-out;
                             scale: 1.1;
                         }
                     }
-
                 }
             }
 
-            .search{
-                .searchForm{
+            .search {
+                .searchForm {
                     width: 100%;
-                    input{
+                    input {
                         padding: 10px;
                         width: 100%;
                         font-size: 16px;
@@ -165,47 +164,40 @@
                     }
                 }
             }
-            
-            
-            
         }
     }
 }
-        .userChat{
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            &:hover{
-                background: #2f2d52;
-                transition: 0.2s ease-in-out ;
-            }
-            img{
-                height: 24px;
-                width: 24px;
-                object-fit: cover;
-                border-radius: 50%;
-                background: white;
-            }
-            .userChatInfo{
-                span{
-                    font-size: 16px;
-                    font-weight: 500;
-                }
-
-            }
+.userChat {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    &:hover {
+        background: #2f2d52;
+        transition: 0.2s ease-in-out;
+    }
+    img {
+        height: 24px;
+        width: 24px;
+        object-fit: cover;
+        border-radius: 50%;
+        background: white;
+    }
+    .userChatInfo {
+        span {
+            font-size: 16px;
+            font-weight: 500;
         }
+    }
+}
 
-
-
-
-.chat{
+.chat {
     display: flex;
     flex-direction: column;
     // flex: 2;
     // overflow: scroll;
     height: 500px;
-    .chatInfo{
-        padding:0 10px ;
+    .chatInfo {
+        padding: 0 10px;
         // position: absolute;
         width: 100%;
         display: flex;
@@ -214,66 +206,65 @@
         align-items: center;
         background: #3e3c61;
         color: white;
-        span{
+        span {
             font-size: 16px;
             font-weight: 700;
         }
-        .chatIcons{
+        .chatIcons {
             display: flex;
             gap: 10px;
-            img{
+            img {
                 font-size: 24px;
                 cursor: pointer;
             }
-
         }
     }
-    .messages{
+    .messages {
         display: block;
         height: calc(100% - 110px);
         background: #d1d1f2;
         padding: 10px;
         overflow-y: scroll;
         scroll-behavior: smooth;
-        .message{
+        .message {
             // height: 100%;
             display: flex;
             gap: 20px;
-            .messageInfo{
+            .messageInfo {
                 display: flex;
                 flex-direction: column;
                 color: gray;
                 font-weight: 300;
                 margin-bottom: 20px;
-                img{
+                img {
                     width: 40px;
                     height: 40px;
                     border-radius: 50%;
                     object-fit: cover;
                 }
             }
-            .messageContent{
+            .messageContent {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 max-width: 80%;
-                p{
+                p {
                     background: white;
                     padding: 10px 20px;
-                    border-radius: 0 10px 10px 10px ;
+                    border-radius: 0 10px 10px 10px;
                 }
-                img{
+                img {
                     width: 50%;
                     padding: 10px;
                 }
             }
 
-            &.owner{
+            &.owner {
                 flex-direction: row-reverse;
-                .messageContent{
+                .messageContent {
                     align-items: flex-end;
 
-                    p{
+                    p {
                         background: #8da4f1;
                         color: white;
                         border-radius: 10px 0 10px 10px;
@@ -282,10 +273,9 @@
                 }
             }
         }
-        
     }
-    
-    .input{
+
+    .input {
         height: 60px;
         background: white;
         padding: 10px;
@@ -293,29 +283,29 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        input{
+        input {
             width: 100%;
             border: none;
             outline: none;
             padding: 10px 15px;
             color: #2f2252;
-            &::placeholder{
+            &::placeholder {
                 color: gray;
             }
         }
-        .send{
+        .send {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 5px;
-            button{
+            button {
                 padding: 10px;
                 border-radius: 5px;
                 background: #091fdc;
                 color: white;
                 font-weight: 800;
                 border: none;
-                &:hover{
+                &:hover {
                     transition: 0.3s ease-in-out;
                     scale: 1.03;
                 }
@@ -324,3 +314,9 @@
     }
 }
 
+#error-page {
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 30px;
+}
