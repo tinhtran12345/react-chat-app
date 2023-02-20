@@ -1,3 +1,19 @@
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width: 950px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
 .App {
     position: relative;
     // text-align: center;
@@ -103,6 +119,9 @@
         position: relative;
         grid-template-columns: 30% 70%;
         overflow: hidden;
+        @include tablet {
+            width: 90%;
+        }
 
         .sidebar {
             background: #3e3c61;
@@ -119,6 +138,9 @@
                 .logo {
                     color: #e9e9f0;
                     font-weight: 800;
+                    @include tablet {
+                        display: none;
+                    }
                 }
                 .user {
                     display: flex;
@@ -147,6 +169,10 @@
                         &:hover {
                             transition: 0.2s ease-in-out;
                             scale: 1.1;
+                        }
+                        @include tablet {
+                            position: absolute;
+                            bottom: 10px;
                         }
                     }
                 }
